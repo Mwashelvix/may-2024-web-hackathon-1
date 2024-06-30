@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <title>Personal Portfolio - Elvis Maina</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/593f97ebd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> EMMSTRONG Designers</p>
+                <h1>Hi, I'm <span>Elvis Maina</span><br>From Nairobi, Kenya.</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Passport photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m an organized and detail-oriented Financial analyst and accountant in accordance with the 
+                        GAAP expertise and experience in the full spectrum of public accounting and Finance. 
+                        Collaborative team player with ownership mentality and a track record of delivering the highest 
+                        quality strategic solutions to resolve challenges, propel business growth. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>QuickBooks and Sage 50 Accounts Certified</span></li>
+                                <li><span>Statistical Packages Certified I.e. Advanced Excel and SPSS Software</span></li>
+                                <li><span>Microsoft Office Packages I.e. Access, Excel, Word and Publisher</span></li>
+                                <li><span>Money skills</span></li>
+                                <li><span>Interpersonal Skills</span></li>
+                                <li><span>Blockchain</span></li>
+                                <li><span>Gig Economy</span></li>
+                                <li><span>Digital Literacy</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>MAY 2023-AUG 2023</span><br>VOLUNTEERED AS A FINANCE ATTACHEE<br>ST. GEORGES GROUP OF SCHOOLS, NAKURU<br>Working in a mid-sized public accounting firm to provide professional accounting<br>services for individuals and business clients. Provide full range of services, include<br>income tax preparation, audit support, preparation of financial statements, pro forma<br>budgeting, general ledger accounting and bank reconciliation.</li>
+                                <li><span>APRIL 2023-APRIL 2023</span><br>BOOKKEEPER<br>KENJOY WHOLESALE AND RETAILERS, NAKURU</span><br>Inhouse bookkeeper for a KENJOY WHOLESALE AND RETAILERS. Maintained<br>financial books, tracked expenses, prepared and submitted invoices, oversaw payroll.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2022-PRESENT</span><br>BACHELOR OF COMMERCE, FINANCE OPTION,<br>KENYATTA UNIVERSITY<br>Distinguished member of university’s Finance Society-Kenyatta University and<br>Accounting Student Association.<br>Relevant Coursework: Advanced Financial Accounting and Reporting, Accounting<br>Systems, Income Tax.<br>Cum GPA: 73.10.</li>
+                                <li><span>JAN 2018-APRIL 2022</span><br>KENYA CERTIFICATE OF SECONDARY EDUCATION,<br>EDINBURGH SCHOOLS, MURANG’A<br>GRADE: B+, 71 POINTS</li>                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Financial Planning</h2>
+                    <p>Developing comprehensive financial plans tailored to the client's goals and needs.<br>Retirement planning to ensure a comfortable and secure future.<br>Education savings planning for children's or grandchildren's education expenses.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Investment Management</h2>
+                    <p>Portfolio management to optimize investment returns.<br>Asset allocation and diversification strategies to manage risk.<br>Stock, bond, and real estate investment recommendations.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Tax Planning and Optimization</h2>
+                    <p>Minimizing tax liabilities through tax-efficient investment strategies.<br>Identifying tax deductions, credits, and incentives.<br>Estate and inheritance tax planning. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Budgeting and Cash Flow Management</h2>
+                    <p>Creating and maintaining personal or household budgets.<br>Identifying cost-saving measures and ways to increase savings.<br>Monitoring cash flow to ensure financial stability.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    </body>
+</html>
